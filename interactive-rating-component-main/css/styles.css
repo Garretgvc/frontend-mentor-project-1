@@ -14,10 +14,6 @@ html {
     font-size: 15px;
 }
 
-h1 {
-    color: var(--White);
-}
-
 html,
 body,
 .btn {
@@ -42,6 +38,10 @@ p {
     text-transform: uppercase;
 }
 
+.thank-you-component {
+    text-align: center;
+}
+
 
 /*Layout*/
 * {
@@ -57,6 +57,9 @@ p {
     align-items: center;
 }
 
+.hidden {
+    display: none;
+}
 
 /*center and constrict page content*/
 .container {
@@ -115,7 +118,7 @@ input[type="radio"] + span {
     border-radius: 100%;
 }
 
-input[type="radio"]:hover + span, 
+input[type="radio"]:hover + span,
 input[type="radio"] + span:hover {
     cursor: pointer;
     background-color: var(--Orange);
@@ -127,7 +130,7 @@ input[type="radio"]:checked + span {
     color: var(--White);
 }
 
-input[type="radio"], 
+input[type="radio"],
 input[type="radio"] + span,
 .submit-btn {
     transition: all 0.2s;
@@ -138,6 +141,14 @@ input[type="radio"] + span,
     height: 40px;
     width: 40px;
     background-color: rgba(255, 255, 255, 0.05);
+}
+
+.rating-info p {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    color: var(--Orange);
+    display: inline-block;
+    padding: 0.25rem 1.5rem;
 }
 
 .logo-wrapper {
@@ -154,7 +165,8 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.ratings-container {
+.ratings-container, 
+.rating-info {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
